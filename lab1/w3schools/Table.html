@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        table{
+            margin: 100px;
+            border-spacing:10px;
+        }
+        table,tr,td,th {
+            border: 1px solid black;
+            border-collapse:collapse;
+        }
+
+        td,th{
+            padding: 5px;
+            border-color:chartreuse;
+        }
+
+        td{
+            width:100px;
+            text-align: center;
+        }
+        caption{
+            margin-bottom: 20px;
+        }
+
+        .striped th:nth-child(even),td:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+       
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Subjects and credits</caption>
+        <tr>
+            <th></th>
+            <th>Web Development</th>
+            <th>OOP</th>
+            <th>Computer Architecture</th>
+            <th>ICT</th>
+        </tr>
+        <tr>
+            <td>Number of Credits</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+        </tr>
+
+    </table>
+
+
+
+
+        
+    <table>
+        <tr>
+            <td rowspan="2"> 1st </td>
+            <td> 2nd </td>
+            <td> 3rd </td>
+        </tr>
+        <tr>
+            <td> 4th </td>
+            <td> 5th </td>
+        </tr>
+        <tr>
+            <td> 6th </td>
+            <td colspan="2"> 7th </td>
+        </tr>
+    </table>
+
+
+    <h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<table style="width:100%" class="striped">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+</body>
+</html>
