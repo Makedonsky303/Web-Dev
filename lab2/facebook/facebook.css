@@ -1,0 +1,54 @@
+body *{
+    margin:0px;
+    padding: 0px;
+    /* overflow-y: scroll; */
+    display: block;
+    color: #1c1e21;
+}
+
+body, button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+
+.call_to_action{
+    width:400px;
+    box-sizing: border-box;
+    padding-right: 32px;
+    display: inline-block;
+}
+
+.call_to_action h2{
+    width: auto;
+    font-size:24px;
+    font-weight: normal;
+    line-height: 28px;
+    padding: 0 0 20px;
+}
+.img_facebook img{
+    height: 106px;
+    padding: 112px 0 16px;
+}
+
+.form{
+    color:aqua
+}
+
+.inner_container{
+    height: 496px;
+    margin: 0 40px;
+    width: auto;
+    padding: 20px 0;
+    position: relative;
+}
+
+.big_container{
+    padding-bottom: 112px;
+    padding-top: 72px;
+    background: #f2f4f7;
+    min-width: 500px;
+    display: block;
+    unicode-bidi: isolate;
+}
+
