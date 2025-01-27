@@ -9,30 +9,32 @@
     <div class="big_container">
         <div class="inner_container">
             <div class="call_to_action">
-                <div class="img_facebook">
-                    <img src="img.svg" alt="Facebook">
-                </div>
+                
+                <img src="img.svg" alt="Facebook" class="img_facebook">
                 
                 <h2>Connect with friends and the world around you on Facebook.</h2>
             </div>
-            <div class="form">
-                <div>
-                    <input type="text" placeholder="Email or phone number">
-                    <input type="password" placeholder="Password">
-                    <button>Log in</button>
-                    <a>Forgot password</a>
-                    <button>Create new account</button>
-                </div>
+            <div id="login">
+                <form>
+                    <div class="input_box">
+                        <input type="text" placeholder="Email or phone number" class="input">
+                        <input type="password" placeholder="Password" class="input">
+                    </div>
+                    
+                    <button id="login_but">Log in</button>
+                    <a id="forgot_password" href="https://www.facebook.com/recover/initiate/">Forgot password?</a>
+                    <button id="create_new_acc">Create new account</button>
+                
+                </form>
 
-                <p><a>Create a Page</a> for a celebrity, brand or business.</p>
+                <p id="create_page"><a href="https://www.facebook.com/pages/create/?ref_type=registration_form"><b>Create a Page</b></a> for a celebrity, brand or business.</p>
             </div>
         </div>
-
-        <footer>
-               Languages and useful links
-        </footer>
+  
     </div>
-    
+    <footer>
+        Languages and useful links
+    </footer>
     
     
 </body>
