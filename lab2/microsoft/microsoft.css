@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin-top: 0px;
+    width: 100%;
+    font-size: 13px;
+    font-family: 'Segoe UI', SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    height: 53px;
+    display: flex;
+    padding: 0 53px;
+}
+
+.nav, .personal_nav{
+    display: flex;
+    gap: 15px;
+    margin: 0 auto;
+}
+.personal_nav{
+    margin-left: 100px;
+}
+
+.nav span, .personal_nav span {
+    white-space: nowrap; 
+    cursor: pointer;
+    padding: 16px 8px 10px;
+}
+.nav span:hover, .personal_nav span:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+#logo{
+    height: 23px;
+    padding: 16px 6px 16px 10px;
+}
+
+.pay_your_way{
+    background-color: #0067b8 !important;
+    height: 53px;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+.pay_your_way a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.pay_your_way a:hover, #copilot_info a:hover{
+    text-decoration: underline;
+}
+
+
+#copilot{
+    width:100%;
+    display: block;
+}
+#copilot_info{
+    background-color: #fff;
+    width: 30%;
+    height: 7%px;
+    padding: 48px;
+    position: absolute;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+#copilot_info h1,p{
+    color:black;
+}
+
+#copilot_info h1{
+    font-size: 40px;
+}
+#copilot_info p{
+    font-size: 18px;
+}
+
+#copilot_info a{
+    color:#fff;
+    background-color: #0067b8;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.shops{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin:70px 0;
+}
+
+.shop{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.shop img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.products{
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+}
+.product{
+    flex:1;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
+    margin: 30px 30px;
+    padding: 15px;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Push button to bottom */
+}
+.product img{
+    padding: 0px;
+    width: 100%;
+}
+
+.product a{
+    cursor: pointer;
+    color: #fff;
+    background-color: #0067b8;
+    padding: 10px;
+    font-weight: bold;
+}
