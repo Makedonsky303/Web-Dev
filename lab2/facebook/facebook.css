@@ -112,6 +112,59 @@ form button:hover{
     text-align: center;
 }
 
-footer{
-    background-color: #fff;
+.fb-footer {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #8a8d91;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
 }
+
+.footer-languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-languages a,
+.footer-links a {
+    text-decoration: none;
+    color: #8a8d91;
+    margin: 0 5px;
+}
+
+.footer-languages a:hover,
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.more-btn {
+    background: none;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    padding: 2px 6px;
+    cursor: pointer;
+    color: #8a8d91;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+    font-size: 11px;
+}
+

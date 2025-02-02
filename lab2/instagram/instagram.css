@@ -91,10 +91,9 @@ form *, #dont_have_acc {
     margin: 5px 0;
 }
 
-.download_links p{
+.download_links *{
     text-align: center;
 }
-
 
 .download_links_img{
     height: 40px;
