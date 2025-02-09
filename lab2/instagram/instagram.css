@@ -73,10 +73,15 @@ form *, #dont_have_acc {
 #login_but{
     background-color: #00ccff;
     color:#fff;
-    width: 280px;
-    height: 22px;
+    width: 288px;
+    height: 34px;
     font-weight: bold;
     margin-top: 30px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+#login_but:hover{
+    background-color: #00aaff;
 }
 #forgot{
     color:rgb(0, 55, 107);

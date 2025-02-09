@@ -123,8 +123,8 @@ header{
     min-height: 500px;
 
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: space-between; /* Push button to bottom */
+    flex-direction: column; 
+    justify-content: space-between; 
 }
 .product img{
     padding: 0px;
