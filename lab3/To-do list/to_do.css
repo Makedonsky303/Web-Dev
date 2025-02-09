@@ -1,0 +1,55 @@
+header {
+    background-color: black;
+    color:#aaa;
+    width: 100%;
+    padding: 3px 3px 3px 40px;
+}
+.container{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 70%;
+    flex-direction: column;
+}
+.container h1{
+    font-weight: 400;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+}
+.item *{
+    padding: 15px;
+}
+.item button{
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+    background-position: center;
+    background-image: url("trash.png");
+    background-repeat: no-repeat;
+    border: none;
+    background-color: white;
+    margin-left:auto;
+}
+.add_input{
+    margin-right: 20px;
+    width: 70%;
+}
+
+.new_task{
+    width: 80%;
+    margin: 30px auto;
+    justify-content: center;
+    display: flex;
+}
+.new_task *{
+    padding: 7px 10px;
+}
+.new_task button{
+    color: white;
+    background-color: #0066dd;
+}
