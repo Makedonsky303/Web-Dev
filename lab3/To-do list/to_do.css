@@ -36,20 +36,23 @@ header {
     margin-left:auto;
 }
 .add_input{
-    margin-right: 20px;
     width: 70%;
 }
 
-.new_task{
-    width: 80%;
+.functionality{
+    width: 85%;
     margin: 30px auto;
     justify-content: center;
     display: flex;
+    gap: 20px;
 }
-.new_task *{
+.functionality *{
     padding: 7px 10px;
 }
-.new_task button{
+.functionality button{
     color: white;
     background-color: #0066dd;
+}
+.tasks{
+    margin-bottom:30px;
 }
