@@ -4,7 +4,15 @@
         <h3 class="listing-name">{{product.name}}</h3>
         <p class="listing-description">{{product.description}}</p>
         <p class="listing-rating">Рейтинг: {{product.rating}}</p>
+
+        <div class="likes">
+            <p>Number of likes: {{product.likes}}</p>
+            <button (click)="increaseLikes(product.id)">Like</button>
+        </div>
+        
+        
         <a class="listing-link" href="https://t.me/share/url?url={{product.link}}">Share via Telegram</a>
+        <button (click)="removeProduct(product.id)" class="remove-button">Remove</button>
     </section>
 </section>
 <button [routerLink]="'/'" style="margin-top: 100px;">Вернуться в каталог</button>

@@ -24,4 +24,20 @@ export class ProductInfoComponent {
     const categoryId = Number(this.route.snapshot.params['id'])
     this.category = this.productService.getCategoryById(categoryId);
   }
+
+  removeProduct(productId: number): void {
+    if (this.category) {
+      this.category.productList = this.category.productList.filter(product => product.id !== productId);
+    }
+  }
+
+  increaseLikes(productId: number): void {
+    if(this.category){
+      const product = this.category.productList.find(p => p.id === productId);
+      if (product) {
+        product.likes++;
+      }
+    }
+    
+  }
 }
