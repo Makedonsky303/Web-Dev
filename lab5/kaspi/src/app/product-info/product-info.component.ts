@@ -1,23 +1,27 @@
 import { Component,inject} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import { ProductInfo } from '../product-info';
+import { ProductDataService } from '../product-data.service';
+import { Category } from '../category';
+import { RouterModule } from '@angular/router';
 
 @Component({
   standalone: true,
   selector: 'app-product-info',
-  imports: [CommonModule],
+  imports: [CommonModule,RouterModule],
   templateUrl:'./product-info.component.html',
   styleUrl: './product-info.component.css'
 })
 export class ProductInfoComponent {
 
-  
+
   route: ActivatedRoute = inject(ActivatedRoute);
   
-  categoryId = 1;
+  productService = inject(ProductDataService);
+  category: Category | undefined;
 
   constructor(){
-    this.categoryId = Number(this.route.snapshot.params['id'])
+    const categoryId = Number(this.route.snapshot.params['id'])
+    this.category = this.productService.getCategoryById(categoryId);
   }
 }
