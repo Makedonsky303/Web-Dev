@@ -5,7 +5,5 @@ export interface ProductInfo {
     description: string,
     rating: number,
     link: string,
-    likes:number,
-    price:number,
-    isDiscount:boolean
+    likes:number
 }

@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ProductInfo } from './product-info';
-import { Category } from './category';
+import { Category } from '../category';
 
 @Injectable({
   providedIn: 'root'
@@ -17,9 +16,7 @@ export class ProductDataService {
         description: "Магнитный кубик Рубика 5.6x5.6x5.6 см",
         rating: 5,
         link: "https://kaspi.kz/shop/p/kubik-rubika-gan-356m-magnitnyi-109783051/",
-        likes:0,
-        price:1000,
-        isDiscount:false
+        likes:0
       },
       {
         id:2,
@@ -28,9 +25,7 @@ export class ProductDataService {
         description: "Магнитный кубик 10х15 см, пластик и металл",
         rating: 5,
         link: "https://kaspi.kz/shop/p/gan-magnitnyi-kubik-rubika-3x3-gan356-xs-magnetic-108482609/",
-        likes:0,
-        price:1200,
-        isDiscount:false
+        likes:0
       },
       {
         id:3,
@@ -39,9 +34,7 @@ export class ProductDataService {
         description: "Пластиковый кубик 5.6x5.6x5.6 см",
         rating: 5,
         link: "https://kaspi.kz/shop/p/gan-kubik-rubika-3x3-356m-lite-108060916/",
-        likes:0,
-        price:900,
-        isDiscount:false
+        likes:0
       }
     ]
   },
@@ -56,9 +49,7 @@ export class ProductDataService {
         description: "Мультиколор, без магнитов",
         rating: 5,
         link: "https://kaspi.kz/shop/p/kubik-rubika-golovolomka-qiyi-mofangge-wushuang-5x5-47011-2-mul-tikolor-bez-magnitov-112908453/",
-        likes:0,
-        price:1000,
-        isDiscount:false
+        likes:0
       },
       {
         id:5,
@@ -67,9 +58,7 @@ export class ProductDataService {
         description: "Пластиковый кубик 5.6х5.6х5.6 см",
         rating: 5,
         link: "https://kaspi.kz/shop/p/kubik-rubika-qiyi-toys-golovolomka-plastik-117038999/",
-        likes:0,
-        price:1000,
-        isDiscount:false
+        likes:0
       },
       {
         id:6,
@@ -78,9 +67,7 @@ export class ProductDataService {
         description: "Пластиковый кубик 5х5х5 см, подходит для всех",
         rating: 5,
         link: "https://kaspi.kz/shop/p/golovolomka-qiyi-toys-kubik-rubika-2h2-qidi-s-plastik-100068556/",
-        likes:0,
-        price:1000,
-        isDiscount:false
+        likes:0
       }
     ]
   },
@@ -95,9 +82,7 @@ export class ProductDataService {
         description: "Пластиковый кубик Рубика размером 5.6x5.6x5.6 см",
         rating: 5,
         link: "https://kaspi.kz/shop/p/kubik-rubika-gan-speedcube-plastik-112153487/",
-        likes:0,
-        price:1000,
-        isDiscount:false
+        likes:0
       },
       {
         id:8,
@@ -106,9 +91,7 @@ export class ProductDataService {
         description: "Пластиковый кубик 5.6x5.6x5.6 см",
         rating: 5,
         link: "https://kaspi.kz/shop/p/gan-kubik-rubika-3x3-356-m-mul-tikolor-108060858/",
-        likes:0,
-        price:1000,
-        isDiscount:false
+        likes:0
       },
       {
         id:9,
@@ -117,9 +100,7 @@ export class ProductDataService {
         description: "Белый-оранжевый кубик 6х3 см",
         rating: 5,
         link: "https://kaspi.kz/shop/p/kubik-rubika-qiyi-toys-golovolomka-plastik-112816782/",
-        likes:0,
-        price:1000,
-        isDiscount:false
+        likes:0
       }
     ]
   }];

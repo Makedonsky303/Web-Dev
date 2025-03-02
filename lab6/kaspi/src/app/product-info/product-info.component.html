@@ -9,10 +9,7 @@
             <p>Number of likes: {{product.likes}}</p>
             <button (click)="increaseLikes(product.id)">Like</button>
         </div>
-
-        <span>Price: {{product.price}}</span>
-
-        <button (click)="discount(product.id)">{{product.isDiscount}}</button>
+        
         
         <a class="listing-link" href="https://t.me/share/url?url={{product.link}}">Share via Telegram</a>
         <button (click)="removeProduct(product.id)" class="remove-button">Remove</button>
