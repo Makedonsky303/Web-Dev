@@ -21,15 +21,15 @@ export class ProductDataService {
   }
 
   getCategories(): Observable<Category[]> {
-    return this.http.get<Category[]>(`${this.apiUrl}categories/`);
+    return this.http.get<Category[]>(`${this.apiUrl}categories`);
   }
 
   getCategory(id: number): Observable<Category> {
-    return this.http.get<Category>(`${this.apiUrl}categories/${id}/`);
+    return this.http.get<Category>(`${this.apiUrl}categories/${id}`);
   }
 
   getProductsByCategory(id: number): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.apiUrl}categories/${id}/products/`);
+    return this.http.get<Product[]>(`${this.apiUrl}categories/${id}/products`);
   }
 
 }

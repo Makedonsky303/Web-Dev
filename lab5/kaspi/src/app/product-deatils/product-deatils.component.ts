@@ -23,7 +23,6 @@ export class ProductDeatilsComponent {
     if (!isNaN(productId)) {
       
       this.productData.getProduct(productId).subscribe(product => {
-        console.log("Product retrieved:", product);
         this.product = product;
         
       });

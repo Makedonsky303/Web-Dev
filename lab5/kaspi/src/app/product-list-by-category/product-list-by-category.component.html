@@ -1,5 +1,5 @@
 <section class="results">
-    <h1>All products</h1>
+    <h1>Products category {{categoryName}}</h1>
     <div *ngFor="let product of productList">
         <a [routerLink]="['/products/', product.id]">{{ product.name }}</a>
     </div>

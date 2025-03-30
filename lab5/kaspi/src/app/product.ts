@@ -4,6 +4,6 @@ export interface Product {
     description: string,
     price:number,
     count:number,
-    isActive:boolean,
+    is_active:boolean,
     category:number
 }
