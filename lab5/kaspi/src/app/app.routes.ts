@@ -1,18 +1,17 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { ProductInfoComponent } from './product-info/product-info.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductDeatilsComponent } from './product-deatils/product-deatils.component';
 
 const routeConfig: Routes = [
+
     {
-        path:'',
-        component: HomeComponent,
-        title: "Categories"
+        path:'products',
+        component: ProductListComponent,
     },
     {
-        path:':id',
-        component: ProductInfoComponent,
-        title: "Product list"
-    }
+        path:'products/:id',
+        component: ProductDeatilsComponent,
+    },
 ];
 
 export default routeConfig;

@@ -1,4 +1,5 @@
-<section class="categories">
-    <a [routerLink]="['/',category.id]">{{category.name}}</a>
+<section class="results">
+    <div *ngFor="let category of productList">
+        <a [routerLink]="['/products/', category.id]">{{ category.name }}</a>
+    </div>
 </section>
-

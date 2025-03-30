@@ -1,7 +1,8 @@
-import { Component,Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Category } from '../category';
 import { RouterModule } from '@angular/router';
+import { ProductDataService } from '../product-data.service';
+import { Product } from '../product';
 
 @Component({
   standalone:true,
@@ -11,6 +12,15 @@ import { RouterModule } from '@angular/router';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  @Input() category!: Category;
+  productList: Product[] = [];
+
+    constructor(private productService: ProductDataService){ }
+
+    ngOnInit(): void {
+      this.productService.getProducts().subscribe(data => {
+        this.productList = data;
+        console.log(data);
+      });
+    }
 }
 
