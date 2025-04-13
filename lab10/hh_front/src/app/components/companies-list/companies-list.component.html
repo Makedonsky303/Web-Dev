@@ -1,0 +1,5 @@
+<section class="results">
+    <div *ngFor="let company of companiesList">
+        <a [routerLink]="['/companies/', company.id]">{{ company.name }}</a>
+    </div>
+</section> 

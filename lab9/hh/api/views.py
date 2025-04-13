@@ -28,9 +28,12 @@ class VacancyDetails(generics.ListAPIView):
     queryset = Vacancy.objects.all()
     serializer_class = VacancySerializer
 
+    
+
 
 class TopTenVacancies(generics.ListAPIView):
     serializer_class = VacancySerializer
     
     def get_queryset(self):
         return Vacancy.objects.all().order_by('-salary')[:10]
+    
